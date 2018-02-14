@@ -1,4 +1,4 @@
-######################   Docker image for building android apps   ######################
+##################   Docker image for building android/cordova apps   ##################
 ########################################################################################
 ## META
 ## Version: 1.1
