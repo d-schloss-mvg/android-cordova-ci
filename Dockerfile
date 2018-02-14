@@ -4,7 +4,7 @@
 ## Version: 1.1
 ## Date: 2018-02-14
 
-# Build on helloagain/android-gradle-ci
+# Build on helloagain/android-gradle-ci with matching versions.
 FROM helloagain/android-gradle-ci:v1.1
 MAINTAINER d-schloss-mvg
 
