@@ -1,19 +1,19 @@
 ##############   Docker image for building android/cordova apps   ##############
 ################################################################################
 ## META
-## Version: 1.2
+## Version: 1.3
 ## Date: 2018-06-06
 
 # Build on helloagain/android-gradle-ci with matching versions.
 FROM helloagain/android-gradle-ci:v1.1
 LABEL maintainer="d-schloss-mvg"
-LABEL version="1.2"
+LABEL version="1.3"
 
 RUN apt-get update && \
     # Install nodejs
     curl -sL https://deb.nodesource.com/setup_8.x | bash - && \
     apt-get update && \
-    apt-get install -y --no-install-recommends nodejs ruby && \
+    apt-get install -y --no-install-recommends nodejs ruby build-essential && \
     # Cleanup
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
